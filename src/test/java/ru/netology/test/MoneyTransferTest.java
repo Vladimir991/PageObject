@@ -40,7 +40,6 @@ class MoneyTransferTest {
         assertEquals(balanceFirstCard + Integer.parseInt(sum), dashboardPage.getFirstCardBalance());
         assertEquals(balanceSecondCard - Integer.parseInt(sum), dashboardPage.getSecondCardBalance());
     }
-
     @Test
     void shouldTransferMoneyBetweenCardsSecond() {
 
@@ -65,6 +64,7 @@ class MoneyTransferTest {
         val moneyTransfer = dashboardPage.firstCardButton();
         moneyTransfer.cancelButton();
     }
+
     @Test
     void shouldCancelMoneyTransferSecond() {
 
